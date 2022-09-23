@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1f20fc76.css",
+    "main.js": "/portfolio/static/js/main.303aad93.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/person.jpg": "/portfolio/static/media/person.7107deb1b71e2d06dc44.jpg",
+    "static/media/running.jpeg": "/portfolio/static/media/running.4021f097f9c602cdbac5.jpeg",
+    "static/media/gaming.webp": "/portfolio/static/media/gaming.e20f28c8f7281c1d8c93.webp",
+    "static/media/laptop.jpeg": "/portfolio/static/media/laptop.bed2a6b0de885f219c48.jpeg",
+    "static/media/cooking.webp": "/portfolio/static/media/cooking.58c999393d3bf965cb4c.webp",
+    "static/media/google-logo.svg": "/portfolio/static/media/google-logo.64742f6405be8486218c501395b08ccb.svg",
+    "static/media/netflix-logo.svg": "/portfolio/static/media/netflix-logo.5787551b8de42aef368c379572555ada.svg",
+    "index.html": "/portfolio/index.html",
+    "main.1f20fc76.css.map": "/portfolio/static/css/main.1f20fc76.css.map",
+    "main.303aad93.js.map": "/portfolio/static/js/main.303aad93.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f20fc76.css",
+    "static/js/main.303aad93.js"
+  ]
+}
