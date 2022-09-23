@@ -1,15 +1,43 @@
-import personImg from './assets/person.jpg'
+import personImg from './assets/person.jpg';
 import gamingImg from './assets/gaming.webp';
 import cookingImg from './assets/cooking.webp';
 import runningImg from './assets/running.jpeg';
 
-import google from './assets/google-logo.svg'
-import netflix from './assets/netflix-logo.svg'
+import google from './assets/google-logo.svg';
+import netflix from './assets/netflix-logo.svg';
 
 import { FaEnvelope } from 'react-icons/fa';
 import { MdLocalPhone } from 'react-icons/md';
+import { useEffect, useState } from 'react';
+
+import data from './data/data.json';
+import ProjectBlock from './ProjectBlock';
 
 function App() {
+  const [projects, setProjects] = useState([]);
+  const [filter, setFilter] = useState();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await data;
+
+      setProjects(res);
+    };
+
+    fetchData();
+  }, []);
+
+  const pressFilter = (e) => {
+    setFilter(e.target.name);
+    const newArr = data.filter((project) => {
+      return project.tech === e.target.name;
+    });
+
+    setProjects([...newArr]);
+  };
+
+  console.log(projects);
+
   return (
     <div className="page">
       <div className="wrapper">
@@ -175,8 +203,53 @@ function App() {
             </div>
           </div>
 
-          
+          <div className="page-block views-projects">
+            <h3 className="views-projects__title">Projects ({projects.length})</h3>
+
+            <div className="views-projects__block">
+              <button
+                className={
+                  filter === 'react' ? 'views-projects__button--active' : 'views-projects__button'
+                }
+                name="react"
+                onClick={pressFilter}>
+                React
+              </button>
+              <button
+                className={
+                  filter === 'vue' ? 'views-projects__button--active' : 'views-projects__button'
+                }
+                name="vue"
+                onClick={pressFilter}>
+                Vue
+              </button>
+              <button
+                className={
+                  filter === 'responsive'
+                    ? 'views-projects__button--active'
+                    : 'views-projects__button'
+                }
+                name="responsive"
+                onClick={pressFilter}>
+                Responsive
+              </button>
+            </div>
+          </div>
         </div>
+
+        {projects.length > 0 ? (
+          <div className="project">
+            {projects.map((project) => (
+              <ProjectBlock project={project} />
+            ))}
+          </div>
+        ) : (
+          <div className="page-block project--empty">
+            <div className="page__title">
+              Not yet
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

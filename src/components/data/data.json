@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Recipe Blog",
+    "img": "./images/recipe-page.png",
+    "tags": ["#HTML", "#CSS", "#responsive"],
+    "describe": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+    "demo": "https://oleksiy-lyashenko.github.io/recipe_page/",
+    "code": "https://github.com/Oleksiy-Lyashenko/recipe_page",
+    "tech": "responsive"
+  },
+  {
+    "id": 2,
+    "title": "Checkout Page",
+    "img": "./images/checkout-page.png",
+    "tags": ["#HTML", "#CSS", "#responsive"],
+    "describe": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+    "demo": "https://oleksiy-lyashenko.github.io/checkout_page/",
+    "code": "https://github.com/Oleksiy-Lyashenko/checkout_page",
+    "tech": "responsive"
+  },
+  {
+    "id": 3,
+    "title": "Edie Homepage",
+    "img": "./images/edie-page.png",
+    "tags": ["#HTML", "#CSS", "#responsive"],
+    "describe": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+    "demo": "https://oleksiy-lyashenko.github.io/edie_homepage/",
+    "code": "https://github.com/Oleksiy-Lyashenko/edie_homepage",
+    "tech": "responsive"
+  }
+]
